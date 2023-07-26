@@ -13,14 +13,14 @@ def get_user_ids(user_name):
 
 # Chatbot function
 def chatbot():
-    st.title("Movie Recommendation Chatbot")
+    st.title("Game Recommendation Chatbot")
     st.write("Welcome! Let's start chatting.")
 
     chat_history = []
 
     # Chat loop
     while True:
-        user_name = st.text_input("Enter your name:")
+        user_name = st.text_input("Please enter your name:")
 
         if user_name.strip():  # Check if user_name is not empty or only whitespace
             user_ids = get_user_ids(user_name)
